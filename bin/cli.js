@@ -18,6 +18,7 @@ Options:
   --skip-agreements        Skip Agreement System init
   --skip-adr              Skip ADR System init
   --skip-mermaid           Skip Mermaid Workbench init
+  --skip-lifecycle         Skip Feature Lifecycle Tracker init
 `;
 
 if (flags.includes("help") || flags.includes("--help") || flags.includes("-h")) {
@@ -50,6 +51,11 @@ const steps = [
     name: "Mermaid Workbench",
     flag: "--skip-mermaid",
     cmd: "npx mermaid-workbench init",
+  },
+  {
+    name: "Feature Lifecycle Tracker",
+    flag: "--skip-lifecycle",
+    cmd: "npx feature-lifecycle init --yes",
   },
 ];
 
