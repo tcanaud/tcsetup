@@ -16,6 +16,7 @@ Options:
   --skip-bmad              Skip BMAD Method install
   --skip-speckit           Skip Spec Kit init
   --skip-agreements        Skip Agreement System init
+  --skip-adr              Skip ADR System init
   --skip-mermaid           Skip Mermaid Workbench init
 `;
 
@@ -39,6 +40,11 @@ const steps = [
     name: "Agreement System",
     flag: "--skip-agreements",
     cmd: "npx agreement-system init --yes",
+  },
+  {
+    name: "ADR System",
+    flag: "--skip-adr",
+    cmd: "npx adr-system init --yes",
   },
   {
     name: "Mermaid Workbench",
