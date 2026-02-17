@@ -2,6 +2,12 @@
 
 import { execSync } from "node:child_process";
 import { argv } from "node:process";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const { version } = JSON.parse(readFileSync(join(__dirname, "..", "package.json"), "utf8"));
 
 const flags = argv.slice(2);
 
@@ -59,7 +65,7 @@ const steps = [
   },
 ];
 
-console.log("\n  tcsetup v1.0.0\n");
+console.log(`\n  tcsetup v${version}\n`);
 
 let current = 0;
 const total = steps.filter((s) => !flags.includes(s.flag)).length;
