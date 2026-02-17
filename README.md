@@ -6,8 +6,8 @@ Bootstrap a new project with the full TC toolchain in one command.
 
 | Step | Tool | Command |
 |------|------|---------|
-| 1 | [BMAD Method](https://github.com/bmad-code-org/bmad-method) | `npx bmad-method install` |
-| 2 | [Spec Kit](https://github.com/anthropics/specify) | `specify init --here --ai claude` |
+| 1 | [BMAD Method](https://github.com/bmad-code-org/BMAD-METHOD) | `npx bmad-method install` |
+| 2 | [Spec Kit](https://github.com/github/spec-kit) | `specify init --here --ai claude` |
 | 3 | [Agreement System](https://github.com/tcanaud/agreement-system) | `npx agreement-system init --yes` |
 | 4 | [Mermaid Workbench](https://github.com/tcanaud/mermaid-workbench) | `npx mermaid-workbench init` |
 
