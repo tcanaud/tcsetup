@@ -94,7 +94,7 @@ const commandsSource = join(__dirname, "..", "commands");
 const commandsDest = join(process.cwd(), ".claude", "commands");
 
 if (existsSync(commandsSource)) {
-  const commandFiles = ["tcsetup.onboard.md"];
+  const commandFiles = ["tcsetup.onboard.md", "feature.workflow.md"];
   mkdirSync(commandsDest, { recursive: true });
   for (const file of commandFiles) {
     const src = join(commandsSource, file);
