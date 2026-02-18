@@ -30,6 +30,7 @@ Options (init):
   --skip-mermaid           Skip Mermaid Workbench init
   --skip-lifecycle         Skip Feature Lifecycle Tracker init
   --skip-knowledge         Skip Knowledge System init
+  --skip-product           Skip Product Manager init
 `;
 
 switch (command) {

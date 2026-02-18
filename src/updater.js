@@ -37,6 +37,12 @@ const TOOLS = [
     pkg: "@tcanaud/knowledge-system",
     cmd: "npx @tcanaud/knowledge-system update && npx @tcanaud/knowledge-system refresh",
   },
+  {
+    name: "Product Manager",
+    marker: ".product",
+    pkg: "@tcanaud/product-manager",
+    cmd: "npx @tcanaud/product-manager update",
+  },
 ];
 
 const COMMAND_FILES = ["tcsetup.onboard.md", "feature.workflow.md"];

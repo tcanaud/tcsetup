@@ -42,6 +42,11 @@ const steps = [
     flag: "--skip-knowledge",
     cmd: "npx @tcanaud/knowledge-system init --yes",
   },
+  {
+    name: "Product Manager",
+    flag: "--skip-product",
+    cmd: "npx @tcanaud/product-manager init --yes",
+  },
 ];
 
 export function install(flags = []) {
