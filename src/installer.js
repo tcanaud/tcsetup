@@ -84,7 +84,7 @@ export function install(flags = []) {
   const commandsDest = join(process.cwd(), ".claude", "commands");
 
   if (existsSync(commandsSource)) {
-    const commandFiles = ["tcsetup.onboard.md", "feature.workflow.md"];
+    const commandFiles = ["tcsetup.onboard.md"];
     mkdirSync(commandsDest, { recursive: true });
     for (const file of commandFiles) {
       const src = join(commandsSource, file);

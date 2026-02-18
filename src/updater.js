@@ -51,7 +51,7 @@ const TOOLS = [
   },
 ];
 
-const COMMAND_FILES = ["tcsetup.onboard.md", "feature.workflow.md"];
+const COMMAND_FILES = ["tcsetup.onboard.md"];
 
 function isInstalled(marker, projectRoot) {
   if (Array.isArray(marker)) {

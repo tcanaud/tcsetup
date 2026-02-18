@@ -1,6 +1,6 @@
 {
   "name": "tcsetup",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "type": "module",
   "description": "Bootstrap a new project with BMAD, Spec Kit, Agreement System, and Mermaid Workbench in one command.",
   "bin": {
