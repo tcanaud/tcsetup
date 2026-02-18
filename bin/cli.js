@@ -29,6 +29,7 @@ Options (init):
   --skip-adr              Skip ADR System init
   --skip-mermaid           Skip Mermaid Workbench init
   --skip-lifecycle         Skip Feature Lifecycle Tracker init
+  --skip-knowledge         Skip Knowledge System init
 `;
 
 switch (command) {

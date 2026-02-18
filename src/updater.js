@@ -31,6 +31,12 @@ const TOOLS = [
     pkg: "mermaid-workbench",
     cmd: "npx mermaid-workbench init",
   },
+  {
+    name: "Knowledge System",
+    marker: ".knowledge",
+    pkg: "@tcanaud/knowledge-system",
+    cmd: "npx @tcanaud/knowledge-system update && npx @tcanaud/knowledge-system refresh",
+  },
 ];
 
 const COMMAND_FILES = ["tcsetup.onboard.md", "feature.workflow.md"];

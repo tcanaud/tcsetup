@@ -37,6 +37,11 @@ const steps = [
     flag: "--skip-lifecycle",
     cmd: "npx feature-lifecycle init --yes",
   },
+  {
+    name: "Knowledge System",
+    flag: "--skip-knowledge",
+    cmd: "npx @tcanaud/knowledge-system init --yes",
+  },
 ];
 
 export function install(flags = []) {
