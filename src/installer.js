@@ -47,6 +47,11 @@ const steps = [
     flag: "--skip-product",
     cmd: "npx @tcanaud/product-manager init --yes",
   },
+  {
+    name: "QA System",
+    flag: "--skip-qa",
+    cmd: "npx @tcanaud/qa-system init --yes",
+  },
 ];
 
 export function install(flags = []) {

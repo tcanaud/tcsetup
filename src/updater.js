@@ -43,6 +43,12 @@ const TOOLS = [
     pkg: "@tcanaud/product-manager",
     cmd: "npx @tcanaud/product-manager update",
   },
+  {
+    name: "QA System",
+    marker: ".qa",
+    pkg: "@tcanaud/qa-system",
+    cmd: "npx @tcanaud/qa-system update",
+  },
 ];
 
 const COMMAND_FILES = ["tcsetup.onboard.md", "feature.workflow.md"];
