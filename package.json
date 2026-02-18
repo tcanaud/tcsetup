@@ -1,6 +1,6 @@
 {
   "name": "tcsetup",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "type": "module",
   "description": "Bootstrap a new project with BMAD, Spec Kit, Agreement System, and Mermaid Workbench in one command.",
   "bin": {
@@ -21,7 +21,8 @@
     "url": "https://github.com/tcanaud/tcsetup.git"
   },
   "files": [
-    "bin/"
+    "bin/",
+    "commands/"
   ],
   "engines": {
     "node": ">=18.0.0"

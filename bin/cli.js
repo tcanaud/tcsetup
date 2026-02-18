@@ -2,7 +2,7 @@
 
 import { execSync } from "node:child_process";
 import { argv } from "node:process";
-import { readFileSync } from "node:fs";
+import { readFileSync, mkdirSync, copyFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -87,6 +87,24 @@ for (const step of steps) {
     console.error(`\n  ⚠ ${step.name} failed (exit code ${err.status}).`);
     console.error(`  Continuing with remaining steps...\n`);
   }
+}
+
+// ── Install Claude Code commands ──────────────────────
+const commandsSource = join(__dirname, "..", "commands");
+const commandsDest = join(process.cwd(), ".claude", "commands");
+
+if (existsSync(commandsSource)) {
+  const commandFiles = ["tcsetup.onboard.md"];
+  mkdirSync(commandsDest, { recursive: true });
+  for (const file of commandFiles) {
+    const src = join(commandsSource, file);
+    const dest = join(commandsDest, file);
+    if (existsSync(src)) {
+      copyFileSync(src, dest);
+      console.log(`  [cmd] Installed .claude/commands/${file}`);
+    }
+  }
+  console.log();
 }
 
 console.log("  Done! Project setup complete.\n");
