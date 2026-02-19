@@ -52,6 +52,11 @@ const steps = [
     flag: "--skip-qa",
     cmd: "npx @tcanaud/qa-system init --yes",
   },
+  {
+    name: "Playbook Supervisor",
+    flag: "--skip-playbook",
+    cmd: "npx @tcanaud/playbook init --yes",
+  },
 ];
 
 export function install(flags = []) {

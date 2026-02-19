@@ -31,6 +31,8 @@ Options (init):
   --skip-lifecycle         Skip Feature Lifecycle Tracker init
   --skip-knowledge         Skip Knowledge System init
   --skip-product           Skip Product Manager init
+  --skip-qa                Skip QA System init
+  --skip-playbook          Skip Playbook Supervisor init
 `;
 
 switch (command) {

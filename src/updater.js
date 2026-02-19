@@ -49,6 +49,12 @@ const TOOLS = [
     pkg: "@tcanaud/qa-system",
     cmd: "npx @tcanaud/qa-system update",
   },
+  {
+    name: "Playbook Supervisor",
+    marker: ".playbooks",
+    pkg: "@tcanaud/playbook",
+    cmd: "npx @tcanaud/playbook update",
+  },
 ];
 
 const COMMAND_FILES = ["tcsetup.onboard.md"];
