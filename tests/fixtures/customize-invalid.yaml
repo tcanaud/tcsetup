@@ -1,0 +1,8 @@
+agent:
+  name: "test"
+  invalid: [unclosed array
+  broken: structure: here
+memories:
+  - item1
+  - item2
+unmatched: }

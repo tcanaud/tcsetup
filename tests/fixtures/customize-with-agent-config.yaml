@@ -1,0 +1,25 @@
+agent:
+  name: "core-bmad-master"
+  version: "2.0.0"
+  instructions: "Core BMAD master agent"
+  custom_field: "user_customization"
+
+memories:
+  - id: "core-mem-1"
+    title: "Core Memory 1"
+    content: "Essential system memory"
+
+persona:
+  role: "System Architect"
+  expertise: "System design and architecture"
+  custom_values:
+    - "value1"
+    - "value2"
+
+critical_actions:
+  - name: "validate_config"
+    priority: "high"
+    enabled: true
+  - name: "backup_state"
+    priority: "medium"
+    enabled: true

@@ -1,0 +1,20 @@
+# BMAD Agent Configuration
+# Customization for bmm-pm agent
+# Last updated: 2026-02-19
+
+agent:
+  name: "bmm-pm"
+  # Product manager specific configuration
+  instructions: "You are a PM assistant"
+  version: "1.0"
+
+# Stored memories and context
+memories:
+  - id: "mem-1"
+    title: "Memory 1"
+    content: "Content"
+
+# Menu items for interaction
+menu:
+  - label: "Help"
+    command: "help"

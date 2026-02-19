@@ -1,0 +1,27 @@
+agent:
+  name: "bmm-pm"
+  version: "1.0.0"
+  instructions: "You are a product manager assistant"
+
+memories:
+  - id: "mem-001"
+    title: "Project Overview"
+    content: "This is the main project overview"
+    created_at: "2026-01-01"
+  - id: "mem-002"
+    title: "Team Structure"
+    content: "Engineering team with 5 members"
+    created_at: "2026-01-05"
+
+menu:
+  - label: "Help"
+    command: "help"
+    description: "Show available commands"
+  - label: "Status"
+    command: "status"
+    description: "Show current status"
+
+persona:
+  role: "Product Manager"
+  expertise: "Product strategy and roadmapping"
+  style: "Professional and collaborative"
